@@ -1,6 +1,6 @@
 def call () {
 
-if (fileExists()) {
+if (fileExists(version.txt)) {
   def readcounter = readFile(file: 'version.txt')
   readcounter = readcounter.toInteger() +1
   def version= "Version" + readcounter
