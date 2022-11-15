@@ -1,3 +1,5 @@
+def call () {
+
 if (fileExists()) {
   def readcounter = readFile(file: 'version.txt')
   readcounter = readcounter.toInteger() +1
@@ -12,3 +14,5 @@ currentBuild.result = "FAILURE"
   } 
 
   echo "Build and Package Completed" 
+  
+}
